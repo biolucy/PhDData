@@ -1,5 +1,8 @@
-theme: minima
+
 title: Lucy Evans PhD Data
+remote_theme: pages-themes/cayman@v0.2.0 
+google_fonts: "Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700"
+
 include:
   - "*.html"
   - "*.tsv"
