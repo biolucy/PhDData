@@ -1,23 +1,67 @@
 ---
 ---
 @import "{{ site.theme }}";
+
+/* 1. Import Atkinson Hyperlegible */
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Apply Atkinson Hyperlegible to everything */
-body, h1, h2, h3, h4, p, li, a {
+/* 2. Global Typography */
+body {
   font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  color: #24292f; /* Modern off-black */
+  line-height: 1.7;
 }
 
-/* Modernizing the Page Header */
+/* 3. Modernize the Header Section */
 .page-header {
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);
-  padding: 3rem 4rem; /* More padding makes it look more "high-end" */
+  /* Using a deep, sophisticated navy gradient instead of the bright green */
+  background-color: #1b365d; 
+  background-image: linear-gradient(135deg, #1b365d 0%, #2d5a27 100%);
+  padding: 5rem 2rem; /* Increased vertical space for a "premium" feel */
 }
 
-/* Improving Readability and Spacing */
+.project-name, .project-tagline {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  text-shadow: none; /* Removes the dated 90s drop shadow */
+}
+
+/* 4. Content Area Refinement */
 .main-content {
-  max-width: 50rem; /* Keeps lines of text from getting too long/wide */
-  line-height: 1.8;
-  color: #334155; /* Use a soft charcoal instead of pure black */
+  max-width: 850px; /* Limits line width for better reading of scientific text */
+  padding-top: 3rem;
+}
+
+/* 5. Clean, Professional Tables for PhD Data */
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto; /* Ensures tables don't break on mobile */
+  border-collapse: collapse;
+  margin: 2rem 0;
+  border: 1px solid #e1e4e8;
+}
+
+th {
+  background-color: #f6f8fa;
+  font-weight: 700;
+  padding: 12px;
+  border: 1px solid #e1e4e8;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #e1e4e8;
+}
+
+tr:hover {
+  background-color: #fbfcfd; /* Subtle highlight when hovering over data rows */
+}
+
+/* 6. Fix Buttons */
+.btn {
+  border-radius: 6px; /* Rounded but not pills */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  transition: opacity 0.2s;
 }
