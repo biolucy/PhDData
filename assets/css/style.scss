@@ -1,67 +1,73 @@
 ---
 ---
-@import "{{ site.theme }}";
-
-/* 1. Import Atkinson Hyperlegible */
+/* HITCHENS TYPOGRAPHY */
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* 2. Global Typography */
-body {
-  font-family: 'Atkinson Hyperlegible', sans-serif !important;
-  color: #24292f; /* Modern off-black */
-  line-height: 1.7;
+/* 1. THE TEAL THEME COLORS */
+$bg-color: #003b46;    /* Deep Teal */
+$text-color: #f5f6fa;  /* Soft White */
+$accent-color: #66a5ad; /* Light Teal */
+$link-color: #81ecec;   /* Bright Cyan */
+
+html, body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Classic Hitchens Centering */
 }
 
-/* 3. Modernize the Header Section */
-.page-header {
-  /* Using a deep, sophisticated navy gradient instead of the bright green */
-  background-color: #1b365d; 
-  background-image: linear-gradient(135deg, #1b365d 0%, #2d5a27 100%);
-  padding: 5rem 2rem; /* Increased vertical space for a "premium" feel */
+/* 2. THE LAYOUT CONTAINER */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
-.project-name, .project-tagline {
-  font-family: 'Atkinson Hyperlegible', sans-serif !important;
-  text-shadow: none; /* Removes the dated 90s drop shadow */
-}
-
-/* 4. Content Area Refinement */
-.main-content {
-  max-width: 850px; /* Limits line width for better reading of scientific text */
-  padding-top: 3rem;
-}
-
-/* 5. Clean, Professional Tables for PhD Data */
-table {
-  display: block;
-  width: 100%;
-  overflow-x: auto; /* Ensures tables don't break on mobile */
-  border-collapse: collapse;
-  margin: 2rem 0;
-  border: 1px solid #e1e4e8;
-}
-
-th {
-  background-color: #f6f8fa;
+/* 3. HEADERS */
+h1 {
+  font-size: 3rem;
   font-weight: 700;
-  padding: 12px;
-  border: 1px solid #e1e4e8;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
-td {
-  padding: 10px;
-  border: 1px solid #e1e4e8;
+h2, h3 {
+  font-weight: 400;
+  font-style: italic;
+  color: $accent-color;
 }
 
-tr:hover {
-  background-color: #fbfcfd; /* Subtle highlight when hovering over data rows */
+/* 4. THE ICONIC HITCHENS DIAMOND RULE */
+.diamond-rule {
+  margin: 2.5rem 0;
+  color: $accent-color;
+  font-size: 1.2rem;
+  &:after {
+    content: " \2014\0020\25C2\25CF\25B8\0020\2014 ";
+  }
 }
 
-/* 6. Fix Buttons */
-.btn {
-  border-radius: 6px; /* Rounded but not pills */
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+/* 5. DATA BUTTON */
+.btn-data {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 15px 35px;
+  background-color: $accent-color;
+  color: $bg-color !important;
+  text-decoration: none;
   font-weight: 700;
+  border-radius: 4px;
   transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
 }

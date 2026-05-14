@@ -1,0 +1,61 @@
+/* HITCHENS TYPOGRAPHY */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* 1. THE TEAL THEME COLORS */
+/* Deep Teal */
+/* Soft White */
+/* Light Teal */
+/* Bright Cyan */
+html, body {
+  background-color: #003b46;
+  color: #f5f6fa;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Classic Hitchens Centering */ }
+
+/* 2. THE LAYOUT CONTAINER */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem; }
+
+/* 3. HEADERS */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff; }
+
+h2, h3 {
+  font-weight: 400;
+  font-style: italic;
+  color: #66a5ad; }
+
+/* 4. THE ICONIC HITCHENS DIAMOND RULE */
+.diamond-rule {
+  margin: 2.5rem 0;
+  color: #66a5ad;
+  font-size: 1.2rem; }
+  .diamond-rule:after {
+    content: " \2014\0020\25C2\25CF\25B8\0020\2014 "; }
+
+/* 5. DATA BUTTON */
+.btn-data {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 15px 35px;
+  background-color: #66a5ad;
+  color: #003b46 !important;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: opacity 0.2s; }
+  .btn-data:hover {
+    opacity: 0.8; }
+
+a {
+  color: #81ecec;
+  text-decoration: underline; }

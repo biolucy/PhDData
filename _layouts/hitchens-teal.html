@@ -1,0 +1,83 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    body {
+        background-color: #f4fbfb; /* much lighter page background */
+        color: #03383a; /* dark teal for readable contrast on light bg */
+        font-family: 'Atkinson Hyperlegible', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 750px;
+        padding: 3rem 2.5rem;
+        text-align: center;
+        background: #ffffff; /* white card for a clean, light look */
+        border-radius: 12px;
+        box-shadow: 0 6px 22px rgba(3, 56, 58, 0.06);
+    }
+
+    /* THE NEW TOP BOX */
+    .info-box {
+        border: 1px solid #9fd7d7;
+        padding: 18px;
+        margin-bottom: 2.5rem;
+        border-radius: 8px;
+        background-color: rgba(159, 215, 215, 0.12); /* very subtle pale teal */
+        font-size: 0.98rem;
+        color: #03383a;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        margin: 0 0 0.35rem 0;
+        color: #024a4c; /* stronger, but still friendly dark teal */
+    }
+
+    .diamond {
+        margin: 1.6rem 0;
+        color: #6bbec0;
+    }
+    .diamond:after { content: " \2014\0020\25C2\25CF\25B8\0020\2014 "; }
+
+    a {
+        color: #007a80;
+        text-decoration: underline;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #007a80; /* medium teal button on light background */
+        color: #ffffff !important;
+        padding: 10px 22px;
+        border-radius: 6px;
+        text-decoration: none !important;
+        font-weight: 700;
+        margin: 18px 0;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- This box appears at the top of every page using this layout -->
+    <div class="info-box">
+      <h1 style="font-size:4.5rem; margin:0; line-height:1;">Lucy Evans</h1>
+      <p style="font-size:1rem; margin:0.6rem 0 0;">PhD Candidate in Microbiology | University of Birmingham</p>
+    </div>
+
+    {{ content }}
+  </div>
+</body>
+</html>

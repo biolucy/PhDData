@@ -1,14 +1,3 @@
-title: Lucy Evans
+title: Lucy Evans PhD Data
 description: PhD Candidate in Microbiology | University of Birmingham
-remote_theme: pages-themes/cayman@v0.2.0
-
-# Language and encoding for better SEO
-lang: en-GB
-encoding: utf-8
-
-include:
-  - assets
-  - _data 
-  - "*.html"
-  - "*.tsv"
-  - "*.png"
+# No theme line here - we are using our custom CSS
