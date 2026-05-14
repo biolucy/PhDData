@@ -3,15 +3,12 @@ layout: default
 title: Lucy Evans PhD Data
 ---
 
-## Project Overview
-To be added 
+# Elucidating Bacteriophage Resistance in *Enterococcus*
 
-### Detailed Reports
-Click the links below to view the interactive `breseq` reports for each sample group.
-
+## Breseq Data
+Click the links below to view the interactive `breseq` reports for each set of strains
+### *Enterococcus faecium*
 * [**E1162**](./E1162breseq.html)
-  *View percentages and evidence for all E1162 mutant strains.*
-
 ---
 
 *Maintained by Lucy Evans*
