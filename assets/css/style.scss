@@ -1,18 +1,23 @@
 ---
 ---
 @import "{{ site.theme }}";
-
-/* Import the font from Google */
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Apply it to the whole site */
-body, h1, h2, h3, h4, p, li {
+/* Apply Atkinson Hyperlegible to everything */
+body, h1, h2, h3, h4, p, li, a {
   font-family: 'Atkinson Hyperlegible', sans-serif !important;
-  line-height: 1.6;
 }
 
-/* Make headers look extra sharp */
-h1, h2, h3 {
-  font-weight: 700;
-  color: #2c3e50;
+/* Modernizing the Page Header */
+.page-header {
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  padding: 3rem 4rem; /* More padding makes it look more "high-end" */
+}
+
+/* Improving Readability and Spacing */
+.main-content {
+  max-width: 50rem; /* Keeps lines of text from getting too long/wide */
+  line-height: 1.8;
+  color: #334155; /* Use a soft charcoal instead of pure black */
 }
