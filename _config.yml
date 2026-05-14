@@ -1,2 +1,6 @@
 theme: minima
 title: Lucy Evans PhD Data
+include:
+  - "*.html"
+  - "*.tsv"
+  - "*.png"
