@@ -1,0 +1,18 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Import the font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Apply it to the whole site */
+body, h1, h2, h3, h4, p, li {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  line-height: 1.6;
+}
+
+/* Make headers look extra sharp */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #2c3e50;
+}
