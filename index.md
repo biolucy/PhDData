@@ -8,6 +8,12 @@ title: Lucy Evans PhD Data
 
 Click the links below to view the interactive `breseq` reports for each set of strains
 
+
+
+#### *Enterococcus faecalis*
+[**064011**](./064011breseq.html)
+
+
 #### *Enterococcus faecium*
 [**E1162**](./E1162breseq.html)
 
