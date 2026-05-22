@@ -4,6 +4,20 @@ title: Lucy Evans PhD Data
 ---
 # Elucidating Bacteriophage Resistance in *Enterococcus*
 ---
+## Snippy Data
+
+Click the links below to view the interactive `snippy` reports for each set of strains
+
+
+
+#### *Enterococcus faecalis*
+[**064011**](./064011snippy.html)
+
+
+#### *Enterococcus faecium*
+[**E1162**](./E1162snippy.html)
+
+
 ## Breseq Data
 
 Click the links below to view the interactive `breseq` reports for each set of strains
