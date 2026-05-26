@@ -31,6 +31,49 @@ tr {background-color: rgb(255,255,255);}
 .junction_gene {}
 .hidden { display: none; }
 .unhidden { display: block; }
+/* 5. THE TEAL SLIDE-UP BUTTON */
+.btn-data {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  cursor: pointer;
+  
+  /* Inherit layout and typography styling */
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  
+  /* Use your custom palette variables */
+  color: $accent-color;
+  background: transparent;
+  border: 2px solid $accent-color;
+  border-radius: 8px;
+  
+  /* Setup the smooth animation background state */
+  box-shadow: inset 0 0 0 0 $accent-color;
+  transition: ease-out 0.4s, transform 0.1s;
+
+  /* Hover effect: backgrounds slides up from bottom */
+  &:hover {
+    color: $bg-color !important; /* Swaps text to dark teal for high legibility */
+    box-shadow: inset 0 -100px 0 0 $accent-color;
+  }
+
+  /* Active tactile click feel */
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+/* 6. GENERAL LINKS */
+a {
+  color: $link-color;
+  text-decoration: underline;
+}
 
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
