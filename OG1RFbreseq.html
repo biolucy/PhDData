@@ -57,15 +57,16 @@ tr {background-color: rgb(255,255,255);}
 <p>Filter Mutations: <input type="text" size="45" class="search" placeholder="Match seq_id, position (no commas), gene, or description" /><!--Output Html_Mutation_Table_String-->
 <div id="mutation_list">
 <table border="0" cellspacing="1" cellpadding="3">
-<tr><th colspan="11" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<tr><th colspan="12" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
 <th>seq&nbsp;id</th>
 <th class="position">position</th>
 <th class="mutation">mutation</th>
-<th class="freq">V583_068_0A</th>
-<th class="freq">V583_068_0B</th>
-<th class="freq">V583_068_1A</th>
-<th class="freq">V583_069_2A</th>
-<th class="freq">V583_069_2B</th>
+<th class="freq">OG1RF-004-0B</th>
+<th class="freq">OG1RF-004-1B</th>
+<th class="freq">OG1RF-004-2B</th>
+<th class="freq">OG1RF-008-3A</th>
+<th class="freq">OG1RF-008-3B</th>
+<th class="freq">OG1RF-008-4A</th>
 <th class="annotation">annotation</th>
 <th class="gene">gene</th>
 <th class="description"width="100%">description</th>
@@ -77,83 +78,131 @@ tr {background-color: rgb(255,255,255);}
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="835799">835,799</td><!-- Position -->
+<td class="position" align="right" data-position="837044">837,044</td><!-- Position -->
+<td class="mutation" align="center">98&nbsp;bp&rarr;16&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right">?</td><td class="freq" align="right">?</td><td class="freq" align="right">?</td><td class="freq" align="right">?</td><td class="freq" align="right">?</td><td class="freq" align="right">100%</td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;2167/&#8209;414)</td>
+<td class="gene" align="center"><i>FODIBH_00811</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>FODIBH_00812</i></td>
+<td class="description" align="left">UvrABC system protein A/Aminoglycoside phosphotransferase domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="alternate_table_row_0">
+<td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="837044">837,044</td><!-- Position -->
+<td class="mutation" align="center">98&nbsp;bp&rarr;22&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">?</td><td class="freq" align="right">?</td><td class="freq" align="right">100%</td><td class="freq" align="right">?</td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;2167/&#8209;414)</td>
+<td class="gene" align="center"><i>FODIBH_00811</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>FODIBH_00812</i></td>
+<td class="description" align="left">UvrABC system protein A/Aminoglycoside phosphotransferase domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="alternate_table_row_1">
+<td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="873662">873,662</td><!-- Position -->
 <td class="mutation" align="center">C&rarr;A</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
-<td class="annotation" align="center"><font class="snp_type_nonsense">S165*</font>&nbsp;(T<font class="mutation_in_codon">C</font>G&rarr;T<font class="mutation_in_codon">A</font>G)&nbsp;</td>
-<td class="gene" align="center"><i>FHJBPK_00848</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Phage infection protein</td>
+<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center"><font class="snp_type_nonsynonymous">P55T</font>&nbsp;(<font class="mutation_in_codon">C</font>CA&rarr;<font class="mutation_in_codon">A</font>CA)&nbsp;</td>
+<td class="gene" align="center"><i>FODIBH_00854</i>&nbsp;&rarr;</td>
+<td class="description" align="left">hypothetical protein</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="836197">836,197</td><!-- Position -->
-<td class="mutation" align="center">C&rarr;T</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
-<td class="annotation" align="center"><font class="snp_type_nonsense">Q298*</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">T</font>AA)&nbsp;</td>
-<td class="gene" align="center"><i>FHJBPK_00848</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Phage infection protein</td>
+<td class="position" align="right" data-position="1235610">1,235,610</td><!-- Position -->
+<td class="mutation" align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td>
+<td class="annotation" align="center"><font class="snp_type_synonymous">G260G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td class="gene" align="center"><i>dhaK</i>&nbsp;&rarr;</td>
+<td class="description" align="left">PTS&#8209;dependent dihydroxyacetone kinase, dihydroxyacetone&#8209;binding subunit DhaK</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="836248">836,248</td><!-- Position -->
-<td class="mutation" align="center">C&rarr;T</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center"><font class="snp_type_nonsense">Q315*</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">T</font>AA)&nbsp;</td>
-<td class="gene" align="center"><i>FHJBPK_00848</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Phage infection protein</td>
+<td class="position" align="right" data-position="1820797">1,820,797</td><!-- Position -->
+<td class="mutation" align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center"><font class="snp_type_nonsynonymous">A286V</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td class="gene" align="center"><i>FODIBH_01755</i>&nbsp;&larr;</td>
+<td class="description" align="left">UDP&#8209;glucose 4&#8209;epimerase</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="836600">836,600</td><!-- Position -->
-<td class="mutation" align="center">&Delta;10&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
-<td class="annotation" align="center">coding&nbsp;(1295&#8209;1304/2667&nbsp;nt)</td>
-<td class="gene" align="center"><i>FHJBPK_00848</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Phage infection protein</td>
+<td class="position" align="right" data-position="1821142">1,821,142</td><!-- Position -->
+<td class="mutation" align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center"><font class="snp_type_nonsynonymous">R171L</font>&nbsp;(C<font class="mutation_in_codon">G</font>C&rarr;C<font class="mutation_in_codon">T</font>C)&nbsp;</td>
+<td class="gene" align="center"><i>FODIBH_01755</i>&nbsp;&larr;</td>
+<td class="description" align="left">UDP&#8209;glucose 4&#8209;epimerase</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="836701">836,701</td><!-- Position -->
-<td class="mutation" align="center">C&rarr;T</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td>
-<td class="annotation" align="center"><font class="snp_type_nonsense">Q466*</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">T</font>AA)&nbsp;</td>
-<td class="gene" align="center"><i>FHJBPK_00848</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Phage infection protein</td>
+<td class="position" align="right" data-position="1821289">1,821,289</td><!-- Position -->
+<td class="mutation" align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
+<td class="annotation" align="center"><font class="snp_type_nonsynonymous">A122V</font>&nbsp;(G<font class="mutation_in_codon">C</font>A&rarr;G<font class="mutation_in_codon">T</font>A)&nbsp;</td>
+<td class="gene" align="center"><i>FODIBH_01755</i>&nbsp;&larr;</td>
+<td class="description" align="left">UDP&#8209;glucose 4&#8209;epimerase</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="2117146">2,117,146</td><!-- Position -->
-<td class="mutation" align="center">C&rarr;T</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">?</td><td class="freq" align="right"></td>
-<td class="annotation" align="center"><font class="snp_type_synonymous">L11L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
-<td class="gene" align="center"><i>FHJBPK_02143</i>&nbsp;&larr;</td>
-<td class="description" align="left">dTDP&#8209;4&#8209;dehydrorhamnose reductase</td>
+<td class="position" align="right" data-position="1821604">1,821,604</td><!-- Position -->
+<td class="mutation" align="center">&Delta;35&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center">coding&nbsp;(16&#8209;50/951&nbsp;nt)</td>
+<td class="gene" align="center"><i>FODIBH_01755</i>&nbsp;&larr;</td>
+<td class="description" align="left">UDP&#8209;glucose 4&#8209;epimerase</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="2395263">2,395,263</td><!-- Position -->
-<td class="mutation" align="center">T&rarr;G</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8209;301/+2975)</td>
-<td class="gene" align="center"><i>FHJBPK_02393</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FHJBPK_02394</i></td>
+<td class="position" align="right" data-position="1827913">1,827,913</td><!-- Position -->
+<td class="mutation" align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td>
+<td class="annotation" align="center"><font class="snp_type_nonsense">E383*</font>&nbsp;(<font class="mutation_in_codon">G</font>AG&rarr;<font class="mutation_in_codon">T</font>AG)&nbsp;</td>
+<td class="gene" align="center"><i>FODIBH_01760</i>&nbsp;&larr;</td>
+<td class="description" align="left">CDP&#8209;glycerol:poly(Glycerophosphate) glycerophosphotransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="alternate_table_row_0">
+<td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="1828104">1,828,104</td><!-- Position -->
+<td class="mutation" align="center">(T)<sub>8&rarr;7</sub></td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center">coding&nbsp;(956/1206&nbsp;nt)</td>
+<td class="gene" align="center"><i>FODIBH_01760</i>&nbsp;&larr;</td>
+<td class="description" align="left">CDP&#8209;glycerol:poly(Glycerophosphate) glycerophosphotransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="alternate_table_row_1">
+<td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="1832854">1,832,854</td><!-- Position -->
+<td class="mutation" align="center">99&nbsp;bp&rarr;13&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right">?</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right">?</td><td class="freq" align="right">?</td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;79/+1440)</td>
+<td class="gene" align="center"><i>FODIBH_01763</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FODIBH_01764</i></td>
 <td class="description" align="left">hypothetical protein/hypothetical protein</td>
 </tr>
 <!-- End Table Row -->
@@ -161,45 +210,45 @@ tr {background-color: rgb(255,255,255);}
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="2395864">2,395,864</td><!-- Position -->
-<td class="mutation" align="center">A&rarr;T</td><!-- Cell Mutation -->
-<td class="freq" align="right">?</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8209;902/+2374)</td>
-<td class="gene" align="center"><i>FHJBPK_02393</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FHJBPK_02394</i></td>
-<td class="description" align="left">hypothetical protein/hypothetical protein</td>
+<td class="position" align="right" data-position="1872470">1,872,470</td><!-- Position -->
+<td class="mutation" align="center">100&nbsp;bp&rarr;T</td><!-- Cell Mutation -->
+<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;884/&#8209;3)</td>
+<td class="gene" align="center"><i>FODIBH_01802</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>FODIBH_01803</i></td>
+<td class="description" align="left">Integral membrane bound transporter domain&#8209;containing protein/hypothetical protein</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="2437085">2,437,085</td><!-- Position -->
-<td class="mutation" align="center">&Delta;100&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">?</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8209;283/+4416)</td>
-<td class="gene" align="center"><i>FHJBPK_02431</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FHJBPK_02432</i></td>
-<td class="description" align="left">bacterial Ig&#8209;like domain&#8209;containing protein/MFS transporter</td>
+<td class="position" align="right" data-position="2643599">2,643,599</td><!-- Position -->
+<td class="mutation" align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;83/+2138)</td>
+<td class="gene" align="center"><i>FODIBH_02522</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FODIBH_02523</i></td>
+<td class="description" align="left">hypothetical protein/DUF2628 domain&#8209;containing protein</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
 <td class="seq_id" align="center">contig_1</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="2437836">2,437,836</td><!-- Position -->
+<td class="position" align="right" data-position="2643650">2,643,650</td><!-- Position -->
 <td class="mutation" align="center">&Delta;100&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">?</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8209;1034/+3665)</td>
-<td class="gene" align="center"><i>FHJBPK_02431</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FHJBPK_02432</i></td>
-<td class="description" align="left">bacterial Ig&#8209;like domain&#8209;containing protein/MFS transporter</td>
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">?</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
+<td class="annotation" align="center">intergenic&nbsp;(&#8209;134/+1988)</td>
+<td class="gene" align="center"><i>FODIBH_02522</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>FODIBH_02523</i></td>
+<td class="description" align="left">hypothetical protein/DUF2628 domain&#8209;containing protein</td>
 </tr>
 <!-- End Table Row -->
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_19</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;889&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
+<td class="seq_id" align="center">contig_10</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="142">142</td><!-- Position -->
+<td class="mutation" align="center">1&nbsp;bp&rarr;223&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
 <td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
 <td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
 <td class="description" align="left">&#8211;/&#8211;</td>
@@ -208,34 +257,10 @@ tr {background-color: rgb(255,255,255);}
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_2</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="14243">14,243</td><!-- Position -->
-<td class="mutation" align="center">(AATAGATAC)<sub>2&rarr;3</sub></td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
-<td class="annotation" align="center">coding&nbsp;(602/1011&nbsp;nt)</td>
-<td class="gene" align="center"><i>FHJBPK_03180</i>&nbsp;&rarr;</td>
-<td class="description" align="left">Replication initiator A N&#8209;terminal domain&#8209;containing protein</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_25</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;589&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_25</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="419">419</td><!-- Position -->
-<td class="mutation" align="center">T&rarr;G</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">&Delta;</td><td class="freq" align="right">&Delta;</td><td class="freq" align="right">&Delta;</td><td class="freq" align="right">&Delta;</td>
+<td class="seq_id" align="center">contig_10</td><!-- Seq_Id -->
+<td class="position" align="right" data-position="173">173</td><!-- Position -->
+<td class="mutation" align="center">2&nbsp;bp&rarr;224&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
 <td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
 <td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
 <td class="description" align="left">&#8211;/&#8211;</td>
@@ -244,142 +269,10 @@ tr {background-color: rgb(255,255,255);}
 
 <!-- Print The Table Row -->
 <tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_3</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="14827">14,827</td><!-- Position -->
-<td class="mutation" align="center">A&rarr;C</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center"><font class="snp_type_nonsynonymous">K68Q</font>&nbsp;(<font class="mutation_in_codon">A</font>AA&rarr;<font class="mutation_in_codon">C</font>AA)&nbsp;</td>
-<td class="gene" align="center"><i>tnp</i>&nbsp;&rarr;</td>
-<td class="description" align="left">IS6 family IS1216E transposase</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_3</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="15237">15,237</td><!-- Position -->
-<td class="mutation" align="center">A&rarr;G</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center"><font class="snp_type_synonymous">R204R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">G</font>)&nbsp;</td>
-<td class="gene" align="center"><i>tnp</i>&nbsp;&rarr;</td>
-<td class="description" align="left">IS6 family IS1216E transposase</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_35</td><!-- Seq_Id -->
+<td class="seq_id" align="center">contig_13</td><!-- Seq_Id -->
 <td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;281&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_39</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;259&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_41</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;225&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center"></td>
-<td class="gene" align="center"><i>trnA</i></td>
-<td class="description" align="left">trnA</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_48</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;133&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_50</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;123&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_51</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;122&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_52</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;120&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_55</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;115&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_1">
-<td class="seq_id" align="center">contig_56</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;105&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td>
-<td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
-<td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
-<td class="description" align="left">&#8211;/&#8211;</td>
-</tr>
-<!-- End Table Row -->
-
-<!-- Print The Table Row -->
-<tr class="alternate_table_row_0">
-<td class="seq_id" align="center">contig_57</td><!-- Seq_Id -->
-<td class="position" align="right" data-position="1">1</td><!-- Position -->
-<td class="mutation" align="center">&Delta;101&nbsp;bp</td><!-- Cell Mutation -->
-<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right">100%</td><td class="freq" align="right"></td>
+<td class="mutation" align="center">&Delta;107&nbsp;bp</td><!-- Cell Mutation -->
+<td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right">100%</td><td class="freq" align="right"></td><td class="freq" align="right"></td><td class="freq" align="right"></td>
 <td class="annotation" align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
 <td class="gene" align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
 <td class="description" align="left">&#8211;/&#8211;</td>
@@ -400,5 +293,4 @@ tr {background-color: rgb(255,255,255);}
       Home
     </a>
   </div>
-
 </body></html>

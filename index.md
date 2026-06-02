@@ -26,7 +26,8 @@ Click the links below to view the interactive `breseq` reports for each set of s
 
 #### *Enterococcus faecalis*
 [**064011**](./064011breseq.html)
-
+[**OG1RF**](./OG1RFbreseq.html)
+[**V583**](./V583breseq.html)
 
 #### *Enterococcus faecium*
 [**E1162**](./E1162breseq.html)
