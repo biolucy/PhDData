@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prgC Protein Structure</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://3dmol.org/build/3Dmol-min.js"></script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        .viewer-container {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+        .instructions {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive prgC Macromolecular Structure</h1>
+    <p>Use your mouse to rotate (left-click & drag), zoom (scroll wheel), and pan (right-click & drag) the protein structure.</p>
+
+    <div id="protein-canvas" class="viewer-container"></div>
+
+    <div class="instructions">
+        <h3>Structural Annotations (Mutations):</h3>
+        <ul>
+            <li><strong>Cyan Ribbons:</strong> Specific positions along the PrgC backbone where variants occur (P122T, P131S).</li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            let element = $('#protein-canvas');
+            let config = { backgroundColor: '#ffffff' };
+            let viewer = $3Dmol.createViewer(element, config);
+
+            // Fetch local PDB file relative to index.html (Updated asset path for prgC)
+            $.ajax({
+                url: './assets/prgc.pdb',
+                dataType: 'text',
+                success: function(data) {
+                    viewer.addModel(data, "pdb");
+                    
+                    // Style the baseline backbone structure as a clean spectrum ribbon
+                    viewer.setStyle({}, {cartoon: {color: 'spectrum'}});
+
+                    // --- MUTATION 1: P122T ---
+                    let res122 = {resi: 122};
+                    // Override the cartoon ribbon color to cyan for this segment
+                    viewer.setStyle(res122, {cartoon: {color: 'cyan'}});
+                    viewer.addLabel("P122T", {
+                        font: 'Arial', fontSize: 16, fontColor: 'white', 
+                        backgroundColor: '#111', backgroundOpacity: 0.85
+                    }, res122);
+
+                    // --- MUTATION 2: P131S ---
+                    let res131 = {resi: 131};
+                    viewer.setStyle(res131, {cartoon: {color: 'cyan'}});
+                    viewer.addLabel("P131S", {
+                        font: 'Arial', fontSize: 16, fontColor: 'white', 
+                        backgroundColor: '#111', backgroundOpacity: 0.85
+                    }, res131);
+
+                    viewer.zoomTo();
+                    viewer.render();
+                },
+                error: function(href, err) {
+                    console.error("Failed to load the protein PDB asset file:", err);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
