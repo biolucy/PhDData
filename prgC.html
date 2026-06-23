@@ -62,7 +62,7 @@
 
             // Fetch local PDB file relative to index.html (Updated asset path for prgC)
             $.ajax({
-                url: './assets/prgc.pdb',
+                url: 'assets/prgc.pdb',
                 dataType: 'text',
                 success: function(data) {
                     viewer.addModel(data, "pdb");
